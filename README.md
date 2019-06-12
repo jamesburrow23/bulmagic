@@ -17,7 +17,7 @@ Vue.use(Bulmagic);
 ```
 
 
-###Usage
+### Usage
 ```
 (work in progress)
 
