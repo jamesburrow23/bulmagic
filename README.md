@@ -1,29 +1,52 @@
 # bulmagic
 
-## Project setup
+## installation
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+npm install bulmagic
 ```
 
-### Compiles and minifies for production
+### Configuration
+
 ```
-npm run build
+//in your app.js file import bulmagic
+import Bulmagic from 'bulmagic'
+Vue.use(Bulmagic);
+
+// and in your app.scss file import the styles*
+@import '~bulmagic/dist/bulmagic.css'
 ```
 
-### Run your tests
-```
-npm run test
-```
 
-### Lints and fixes files
+###Usage
 ```
-npm run lint
-```
+(work in progress)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<bulmagic-table :ajax="routes.grid.index"
+                :schema="schema"
+                :editing-layout="layout"
+                :per-page="100"
+                table-height="80vh"
+                form-title="Edit User"
+                title="Users"
+                has-remote-data
+                has-fixed-header
+                load-remote-data-on-scroll
+                uses-remote-filtering
+                uses-remote-sorting
+                uses-remote-pagination
+                is-editable
+                is-full-width
+                @row-updated="handleRowUpdated"
+></bulmagic-table>
+
+<bulmagic-form :schema="schema"
+               :layout="layout"
+               :store="store"
+               :data="$page.auth.user"
+               method="put"
+               :url="url"
+               title="Profile"
+               title-class="subtitle has-text-weight-light"
+               is-card
+></bulmagic-form>
+```
