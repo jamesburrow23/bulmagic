@@ -1,0 +1,294 @@
+$intervals: 1px 2px 3px 4px 5px 6px 7px 8px 9px 10px 15px 20px 25px 30px 32px 35px 40px 50px;
+
+@each $interval in $intervals {
+  /** Padding */
+  .is-padding-#{$interval} {
+    padding: $interval;
+  }
+
+  .is-padding-top-#{$interval} {
+    padding-top: $interval;
+  }
+
+  .is-padding-right-#{$interval} {
+    padding-right: $interval;
+  }
+
+  .is-padding-bottom-#{$interval} {
+    padding-bottom: $interval;
+  }
+
+  .is-padding-left-#{$interval} {
+    padding-left: $interval;
+  }
+
+  /** Margin */
+  .is-margin-#{$interval} {
+    margin: $interval;
+  }
+
+  .is-margin-top-#{$interval} {
+    margin-top: $interval;
+  }
+
+  .is-margin-right-#{$interval} {
+    margin-right: $interval;
+  }
+
+  .is-margin-bottom-#{$interval} {
+    margin-bottom: $interval;
+  }
+
+  .is-margin-left-#{$interval} {
+    margin-left: $interval;
+  }
+
+  @include mobile {
+    /** Padding */
+    .is-mobile-padding-#{$interval} {
+      padding: $interval;
+    }
+
+    .is-mobile-padding-top-#{$interval} {
+      padding-top: $interval;
+    }
+
+    .is-mobile-padding-right-#{$interval} {
+      padding-right: $interval;
+    }
+
+    .is-mobile-padding-bottom-#{$interval} {
+      padding-bottom: $interval;
+    }
+
+    .is-mobile-padding-left-#{$interval} {
+      padding-left: $interval;
+    }
+
+    /** Margin */
+    .is-mobile-margin-#{$interval} {
+      margin: $interval;
+    }
+
+    .is-mobile-margin-top-#{$interval} {
+      margin-top: $interval;
+    }
+
+    .is-mobile-margin-right-#{$interval} {
+      margin-right: $interval;
+    }
+
+    .is-mobile-margin-bottom-#{$interval} {
+      margin-bottom: $interval;
+    }
+
+    .is-mobile-margin-left-#{$interval} {
+      margin-left: $interval;
+    }
+  }
+
+
+  @include tablet {
+    /** Padding */
+    .is-tablet-padding-#{$interval} {
+      padding: $interval;
+    }
+
+    .is-tablet-padding-top-#{$interval} {
+      padding-top: $interval;
+    }
+
+    .is-tablet-padding-right-#{$interval} {
+      padding-right: $interval;
+    }
+
+    .is-tablet-padding-bottom-#{$interval} {
+      padding-bottom: $interval;
+    }
+
+    .is-tablet-padding-left-#{$interval} {
+      padding-left: $interval;
+    }
+
+    /** Margin */
+    .is-tablet-margin-#{$interval} {
+      margin: $interval;
+    }
+
+    .is-tablet-margin-top-#{$interval} {
+      margin-top: $interval;
+    }
+
+    .is-tablet-margin-right-#{$interval} {
+      margin-right: $interval;
+    }
+
+    .is-tablet-margin-bottom-#{$interval} {
+      margin-bottom: $interval;
+    }
+
+    .is-tablet-margin-left-#{$interval} {
+      margin-left: $interval;
+    }
+  }
+
+  @include tablet-only {
+    /** Padding */
+    .is-tablet-only-padding-#{$interval} {
+      padding: $interval;
+    }
+
+    .is-tablet-only-padding-top-#{$interval} {
+      padding-top: $interval;
+    }
+
+    .is-tablet-only-padding-right-#{$interval} {
+      padding-right: $interval;
+    }
+
+    .is-tablet-only-padding-bottom-#{$interval} {
+      padding-bottom: $interval;
+    }
+
+    .is-tablet-only-padding-left-#{$interval} {
+      padding-left: $interval;
+    }
+
+    /** Margin */
+    .is-tablet-only-margin-#{$interval} {
+      margin: $interval;
+    }
+
+    .is-tablet-only-margin-top-#{$interval} {
+      margin-top: $interval;
+    }
+
+    .is-tablet-only-margin-right-#{$interval} {
+      margin-right: $interval;
+    }
+
+    .is-tablet-only-margin-bottom-#{$interval} {
+      margin-bottom: $interval;
+    }
+
+    .is-tablet-only-margin-left-#{$interval} {
+      margin-left: $interval;
+    }
+  }
+
+  @include desktop {
+    /** Padding */
+    .is-desktop-padding-#{$interval} {
+      padding: $interval;
+    }
+
+    .is-desktop-padding-top-#{$interval} {
+      padding-top: $interval;
+    }
+
+    .is-desktop-padding-right-#{$interval} {
+      padding-right: $interval;
+    }
+
+    .is-desktop-padding-bottom-#{$interval} {
+      padding-bottom: $interval;
+    }
+
+    .is-desktop-padding-left-#{$interval} {
+      padding-left: $interval;
+    }
+
+    /** Margin */
+    .is-desktop-margin-#{$interval} {
+      margin: $interval;
+    }
+
+    .is-desktop-margin-top-#{$interval} {
+      margin-top: $interval;
+    }
+
+    .is-desktop-margin-right-#{$interval} {
+      margin-right: $interval;
+    }
+
+    .is-desktop-margin-bottom-#{$interval} {
+      margin-bottom: $interval;
+    }
+
+    .is-desktop-margin-left-#{$interval} {
+      margin-left: $interval;
+    }
+  }
+
+  @include desktop-only {
+    /** Padding */
+    .is-desktop-only-padding-#{$interval} {
+      padding: $interval;
+    }
+
+    .is-desktop-only-padding-top-#{$interval} {
+      padding-top: $interval;
+    }
+
+    .is-desktop-only-padding-right-#{$interval} {
+      padding-right: $interval;
+    }
+
+    .is-desktop-only-padding-bottom-#{$interval} {
+      padding-bottom: $interval;
+    }
+
+    .is-desktop-only-padding-left-#{$interval} {
+      padding-left: $interval;
+    }
+
+    /** Margin */
+    .is-desktop-only-margin-#{$interval} {
+      margin: $interval;
+    }
+
+    .is-desktop-only-margin-top-#{$interval} {
+      margin-top: $interval;
+    }
+
+    .is-desktop-only-margin-right-#{$interval} {
+      margin-right: $interval;
+    }
+
+    .is-desktop-only-margin-bottom-#{$interval} {
+      margin-bottom: $interval;
+    }
+
+    .is-desktop-only-margin-left-#{$interval} {
+      margin-left: $interval;
+    }
+  }
+
+
+}
+
+.subtitle.is-bordered-info {
+  border-bottom: solid 3px #408BCD;
+  display: inline-block;
+  padding: 0px 20px 3px 20px;
+}
+
+.is-height-auto {
+  height: auto;
+}
+
+.has-content-justified-flex-start {
+  justify-content: flex-start;
+}
+
+.has-content-justified-flex-end {
+  justify-content: flex-end;
+}
+
+.is-vertically-aligned-middle {
+  vertical-align: middle;
+}
+
+.cursor-is-pointer {
+  cursor: pointer;
+}
