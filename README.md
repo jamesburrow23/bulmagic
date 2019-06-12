@@ -1,6 +1,8 @@
 # bulmagic
 
-## installation
+full documentation: https://jamesburrow23.github.io/bulmagic/
+
+### Installation
 ```
 npm install bulmagic
 ```
