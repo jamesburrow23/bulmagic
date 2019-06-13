@@ -1,6 +1,6 @@
 {
   "name": "bulmagic",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "main": "./dist/bulmagic.common.js",
   "private": false,
