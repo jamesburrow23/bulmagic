@@ -56,7 +56,7 @@ Vue.use(Bulmagic);
 
 schema: {
     first_name: {
-        component: 'bulma-form-field-input',
+        component: 'bulmagic-form-field-input',
         label: 'First Name',
         name: 'first_name',
         leftIcon: 'fal fa-user',
@@ -64,7 +64,7 @@ schema: {
         isValid: false,
     },
     last_name: {
-        component: 'bulma-form-field-input',
+        component: 'bulmagic-form-field-input',
         label: 'Last Name',
         name: 'last_name',
         leftIcon: 'fal fa-user',
@@ -72,7 +72,7 @@ schema: {
         isValid: false,
     },
     email: {
-        component: 'bulma-form-field-input',
+        component: 'bulmagic-form-field-input',
         label: 'Email',
         name: 'email',
         leftIcon: 'fal fa-envelope',
@@ -80,7 +80,7 @@ schema: {
         isValid: false,
     },
     phone: {
-        component: 'bulma-form-field-input',
+        component: 'bulmagic-form-field-input',
         label: 'Phone',
         name: 'phone',
         leftIcon: 'fal fa-phone',
