@@ -23,10 +23,10 @@
                     <div class="columns" v-if="!isModal">
                         <div class="column has-text-right">
                             <slot name="buttons"/>
-                            <button class="button" type="reset" v-if="hasResetButton" @click.prevent="reset">
+                            <button class="button is-margin-right-5px" type="reset" v-if="hasResetButton" @click.prevent="reset">
                                 <i class="fas fa-undo"></i>&nbsp;{{ resetButtonText }}
                             </button>
-                            <button :class="['button is-success', submitButtonClasses]" type="submit">
+                            <button :class="submitButtonClasses" type="submit">
                                 <i class="fas fa-save"></i>&nbsp;{{ submitButtonText }}
                             </button>
                         </div>
@@ -36,13 +36,13 @@
                     <slot name="card-footer" />
                     <div class="column has-text-right" v-if="isModal">
                         <slot name="buttons"/>
-                        <button class="button" type="reset" @click.prevent="isModalActive = false">
+                        <button class="button is-margin-right-5px" type="reset" @click.prevent="isModalActive = false">
                             <i class="fas fa-times-square"></i>&nbsp;Close
                         </button>
-                        <button class="button" type="reset" v-if="hasResetButton" @click.prevent="reset">
+                        <button class="button is-margin-right-5px" type="reset" v-if="hasResetButton" @click.prevent="reset">
                             <i class="fas fa-undo"></i>&nbsp;{{ resetButtonText }}
                         </button>
-                        <button :class="['button is-success', submitButtonClasses]" type="submit">
+                        <button :class="submitButtonClasses" type="submit">
                             <i class="fas fa-save"></i>&nbsp;{{ submitButtonText }}
                         </button>
                     </div>
@@ -181,6 +181,7 @@
             },
             submitButtonClasses() {
                 return {
+                    'button is-success': true,
                     'is-loading': this.isLoading,
                 };
             },
