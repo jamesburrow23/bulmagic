@@ -80,8 +80,8 @@
 
                 classes[config.table.icons.filter] = true;
                 classes[config.table.icons.fixedWidth] = true;
-                classes[config.table.icons.filtering] = !this.filterValue;
-                classes[config.table.icons.notFiltering] = this.filterValue;
+                classes[config.table.icons.notFiltering] = !this.filterValue;
+                classes[config.table.icons.filtering] = this.filterValue;
 
                 return classes;
             },
