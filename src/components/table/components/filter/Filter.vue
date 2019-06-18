@@ -27,6 +27,8 @@
 </template>
 
 <script>
+    import { getConfig } from "../../../../config";
+
     export default {
         name: 'BulmagicTableFilter',
         data() {
@@ -73,11 +75,15 @@
                 };
             },
             filterIconClasses() {
-                return {
-                    'fa-filter fa-fw': true,
-                    'fal': !this.filterValue,
-                    'fas': this.filterValue,
-                }
+                let config = getConfig();
+                let classes = {};
+
+                classes[config.table.icons.filter] = true;
+                classes[config.table.icons.fixedWidth] = true;
+                classes[config.table.icons.notFiltering] = !this.filterValue;
+                classes[config.table.icons.filtering] = this.filterValue;
+
+                return classes;
             },
             clearButtonStyles() {
                 return {

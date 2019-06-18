@@ -1,3 +1,5 @@
+import { getConfig } from "../../../config";
+
 export default {
     props: {
         sortable: {
@@ -45,12 +47,15 @@ export default {
     },
     methods: {
         sortingColumnIconClasses(column) {
-            return {
-                'fal fa-fw': true,
-                'fas fa-sort-up': this.sortingColumn.name === column.name && this.sortingColumn.direction === 'asc',
-                'fas fa-sort-down': this.sortingColumn.name === column.name && this.sortingColumn.direction === 'desc',
-                'fa-sort': this.sortingColumn.name !== column.name,
-            };
+            let config = getConfig();
+            let classes = {};
+
+            classes[config.table.icons.fixedWidth] = true;
+            classes[config.table.icons.sortUp] = this.sortingColumn.name === column.name && this.sortingColumn.direction === 'asc';
+            classes[config.table.icons.sortDown] = this.sortingColumn.name === column.name && this.sortingColumn.direction === 'desc';
+            classes[config.table.icons.sort] =  this.sortingColumn.name !== column.name;
+
+            return classes;
         },
         sortColumn(column) {
             if (this.sortingColumn.name !== column.name) {
