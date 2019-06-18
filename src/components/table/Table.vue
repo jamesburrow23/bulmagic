@@ -34,7 +34,7 @@
                     <slot name="pre-thead" />
                     <tr>
                         <th v-if="isEditable" width="75"></th>
-                        <th v-for="column in visibleColumns" :class="columnClasses(column)" :style="columnStyles(column)" :ref="`${column._key}_header`">
+                        <th v-for="(column, index) in visibleColumns" v-bind:key="index" :class="columnClasses(column)" :style="columnStyles(column)" :ref="`${column._key}_header`">
                             <div class="level">
                                 <div class="level-item has-content-justified-flex-start cursor-is-pointer" v-if="sortable" @click="sortColumn(column)">
                                     <i :class="sortingColumnIconClasses(column)" v-if="sortable && column.sortable !== false"></i> {{column.label}}
@@ -51,10 +51,10 @@
 
                 <tbody>
                     <slot name="tbody" />
-                    <tr v-for="(row, index) in visibleTableData">
+                    <tr v-for="(row, index) in visibleTableData" v-bind:key="index">
                         <td v-if="isEditable" class="has-text-centered" width="75">
                             <button class="button is-primary is-small is-padding-5px is-height-auto" v-if="row.editable !== false" @click="startModalEditing(row, index)">
-                                <i class="fas fa-pen fa-fw"></i>
+                                <i :class="editColumnIconClass"></i>
                             </button>
                         </td>
 

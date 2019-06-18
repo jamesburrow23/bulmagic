@@ -5,6 +5,10 @@ const DEFAULT_CONFIG = {
             sortUp: 'fas fa-sort-up',
             sortDown: 'fas fa-sort-down',
             sort: 'fa-sort',
+            filter: 'fa-filter',
+            filtering: 'fas',
+            notFiltering: 'fal',
+            edit: 'fas fa-pen fa-fw',
         },
     },
 };

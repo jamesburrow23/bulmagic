@@ -1,3 +1,5 @@
+import { getConfig } from "../../../config";
+
 export default {
     props: {
         isEditable: {
@@ -27,6 +29,16 @@ export default {
             editingRow: null,
             editingRowIndex: null,
         }
+    },
+    computed: {
+        editColumnIconClass() {
+            let config = getConfig();
+            let classes = {};
+
+            classes[config.table.icons.edit] = true;
+
+            return classes;
+        },
     },
     methods: {
         startModalEditing(row, rowIndex) {
